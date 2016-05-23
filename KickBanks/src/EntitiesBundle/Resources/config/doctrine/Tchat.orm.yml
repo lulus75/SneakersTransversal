@@ -1,0 +1,20 @@
+EntitiesBundle\Entity\Tchat:
+    type: entity
+    table: null
+    repositoryClass: EntitiesBundle\Repository\TchatRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nickname:
+            type: string
+            length: 255
+        contentMsg:
+            type: string
+            length: 255
+        dateMsg:
+            type: date
+    lifecycleCallbacks: {  }

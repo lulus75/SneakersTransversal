@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+</head>
+{% include 'UserBundle:Base:layout.html.twig' %}
+<body>
+<form method="POST" name="formRegister" enctype="multipart/form-data">
+        <input name="imageProduit[]" id="filesToUpload" type="file" multiple="" >
+    <br>
+    <br>
+    <h3>Description de votre Article</h3>
+    <textarea name="description" placeholder="Description de votre article ..."></textarea>
+    <br>
+    <br>
+    <h3>Titre</h3>
+    <input type="text" name="title" placeholder="référence de votre produit"></input>
+    <br>
+    <br>
+    <h3>Etat</h3>
+    <select name="etat">
+        <option value="neuf">Neuf</option>
+        <option value="Commeneuf">Comme neuf</option>
+        <option value="tracesusure">Traces d'usure</option>
+        <option value="use">Usé</option>
+    </select>
+    <br>
+    <br>
+    <h3>Couleur</h3>
+    <input type="checkbox" name="color[]" value="blanc">Blanc<br>
+    <input type="checkbox" name="color[]" value="jaune">Jaune<br>
+    <input type="checkbox" name="color[]" value="orange">Orange<br>
+    <input type="checkbox" name="color[]" value="vert">Vert<br>
+    <input type="checkbox" name="color[]" value="bleu">Bleu<br>
+    <input type="checkbox" name="color[]" value="rose">Rose<br>
+    <input type="checkbox" name="color[]" value="rouge">Rouge<br>
+    <input type="checkbox" name="color[]" value="violet">Violet<br>
+    <input type="checkbox" name="color[]" value="gris">Gris<br>
+    <input type="checkbox" name="color[]" value="marron">Marron<br>
+    <input type="checkbox" name="color[]" value="noir">Noir<br>
+    <input type="checkbox" name="color[]" value="beige">Beige<br>
+    <br>
+    <br>
+    <h3>Prix achat immediat</h3>
+    <input type="number" name="price"> &euro;
+    <br>
+    <br>
+    <h3>Prix d'enchère</h3>
+    <input type="number" name="bidPrice"> &euro;
+    <br>
+    <br>
+    <h3>Marque</h3>
+    <select name="marque">
+        <option value="airforce">Air Force</option>
+        <option value="adidas">Adidas</option>
+        <option value="asics">Asics</option>
+        <option value="converse">Converse</option>
+        <option value="diadora">Diadora</option>
+        <option value="jordan">Jordan</option>
+        <option value="karhu">Karhu</option>
+        <option value="lacoste">Lacoste</option>
+        <option value="lecoqsportif">Le coq sportif</option>
+        <option value="newbalance">New Balance</option>
+        <option value="nike">Nike</option>
+        <option value="nikesb">Nike Sb</option>
+        <option value="puma">Puma</option>
+        <option value="reebok">Rebook</option>
+        <option value="vans">Vans</option>
+        <option value="veja">Veja</option>
+        <option value="yeezy">Yeezy</option>
+        <option value="autre">Autre marques</option>
+    </select>
+    <br>
+    <br>
+    <h3>Durée de l'enchère</h3>
+    <br>
+    <br>
+    <select name="endTime">
+        <option value="60">TEST</option>
+        <option value="86400">24H</option>
+        <option value="172800">48H</option>
+        <option value="259200">72H</option>
+        <option value="345600">96H</option>
+        <option value="432000">120H</option>
+        <option value="518400">144H</option>
+        <option value="597600">166H</option>
+    </select>
+    <input type="submit" value="Poser">
+</form>
+<p>
+<h2>Article</h2>
+{{ erreur }}
+</p>
+</body>
+<a href="/profile">Voir articles ?</a>
+</html>

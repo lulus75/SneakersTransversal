@@ -1,0 +1,5 @@
+services:
+
+ register:
+        class: UserBundle\Services\Register
+        arguments: []

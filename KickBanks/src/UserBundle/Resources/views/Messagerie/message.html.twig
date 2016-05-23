@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Messagerie</title>
+</head>
+{% include 'UserBundle:Base:layout.html.twig' %}
+<body>
+<h2>Vos messages</h2>
+<p></p>
+<br>
+<br>
+<h2>écrire un message</h2>
+<form method="POST" name="formMsg">
+    <label for="recepteur">Destinataire (pseudo) </label><br>{{ errorUser }}
+    <input type="text" name="recepteur" id="recepteur"><br><br>
+    <textarea placeholder="hello world..." name="contentMsg"></textarea><br><br>
+    <input type="submit" value="Envoyer message!">
+</form>
+{{ successMessage }}
+<br>
+<br>
+<h2>Messages envoyé(es)</h2>
+{{ msgNoMessageSend }}
+{{ dump(msgSend) }}
+
+{% for message in msgSend %}
+    <ul>
+        <li>
+            contenu:
+            {{ message.contentMessage }}
+        </li>
+        <br>
+        <li>
+            {{ message.dateMessage|date(("m/d/Y")) }}
+        </li>
+    </ul>
+    <br>
+    <br>
+{% endfor %}
+<br>
+<br>
+<h2>Message reçu(s)</h2>
+{{ dump(msgRecu) }}
+
+    <ul>
+        {% for nickname in nicknameSender %}
+        <li>
+            De:
+            <a href="/profile/other/{{ nickname.nickname }}">{{ nickname.nickname }}</a>
+        </li>
+        {% endfor %}
+        <br>
+        {% for value in msgRecu %}
+        <li>
+            contenu
+            {{  value.contentMessage }}
+        </li>
+        <br>
+        <li>
+            date:
+            {{ value.dateMessage|date(("m/d/Y")) }}
+        </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile de {{ nickname }}</title>
+</head>
+{% include 'UserBundle:Base:layout.html.twig' %}
+<body>
+<h2>Profile de {{ nickname }}</h2>
+<br>
+<ul>
+    <li>
+       Pseudo : {{ nickname }}
+    </li>
+    <br>
+    <li>
+       Email : {{ email }}
+    </li>
+    <li>
+       Prénom : {{ firstname }}
+    </li>
+    <li>
+       Nom : {{ lastname }}
+    </li>
+
+</ul>
+<br>
+<br>
+<h2>
+    Annonce déposer par {{ nickname }}
+</h2>
+{% for value in otherArticle %}
+    <ul>
+        <li>
+            {{ dump(otherArticle) }}
+            <!-- add balise img -->
+            <img alt="article" src="{{ asset(value.articleUrl1) }}" style="width: 25%; height: 40%">
+        </li>
+        <br>
+        <li>
+            marque:
+            {{ value.marque }}
+        </li>
+        <br>
+        <li>
+            description:
+            {{ value.description }}
+        </li>
+        <br>
+        <li>
+            prix:
+            {{ value.price }} &euro;
+        </li>
+        <br>
+        <li>
+            date:
+            {{ value.dateArticle|date("m/d/Y") }}
+        </li>
+    </ul>
+    <br><br>
+{% endfor %}
+</body>
+</html>

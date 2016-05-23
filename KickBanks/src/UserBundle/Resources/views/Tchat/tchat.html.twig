@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tchat</title>
+    {% block javascripts %}
+        <script src="{{ asset("assets/js/message.js") }}"></script>
+    {% endblock %}
+</head>
+
+<body>
+<form method="POST" name="formTchat">
+    <label for="content">Rejoignez la conversation :</label><br>
+    <textarea name="message" id="content" placeholder="Votre message ..."></textarea>
+    <br>
+    <br>
+    <input type="submit" value="envoyer">
+</form>
+{{ msgErrorPost }}
+<br>
+<div id="messagerie"></div>
+<h2>Conversation</h2>
+{{ msgError }}
+
+{% for value in allMsg %}
+    <ul>
+        <li>
+            {{ value.dateMsg|date("m/d/Y") }}
+        </li>
+        <li>
+            <a href="/profile/other/{{ value.nickname }}">{{ value.nickname }}</a>
+        </li>
+        <li>
+            {{ value.contentMsg }}
+        </li>
+    </ul>
+    <hr>
+{% endfor %}
+
+</body>
+</html>

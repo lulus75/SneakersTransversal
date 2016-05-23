@@ -1,0 +1,392 @@
+/* BAR DE RECHERCHE */
+.headerSearchForm {
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.headerSearchBar {
+    width: 100%;
+    display: inline-block;
+}
+
+.headerSearchBar input {
+    border: none;
+    outline: none;
+}
+
+.headerSearchBar {
+    height: 35px;
+}
+
+.headerSearchBarArrow{
+    color:white;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.headerSearchBarInput {
+    height: 100%;
+    width: 87%;
+    border-radius: 4px 0 0 4px;
+    padding: 0 20px 0 12px;
+    font-family: "Open Sans";
+}
+
+.headerSearchBarSubmit {
+    height: 100%;
+    cursor: pointer;
+    margin-left: -10px;
+    width: 14%;
+    border-radius: 0 4px 4px 0;
+    background: #ffc70c url(../img/headerSearch.png) no-repeat center;
+    background-size: 25px 25px;
+    background-origin: content-box;
+}
+/* */
+
+/* MENU SNEAKERS */
+.headerMenuBrand, .headerMenuBrand ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.headerMenuBrand li {
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    padding: 5px 6px 12px 6px;
+}
+
+.headerMenuBrand ul li {
+    display: inline-block;
+    border-radius: 0;
+}
+
+.headerMenuBrand ul li:hover {
+    border-radius: 0;
+}
+
+.headerMenuBrand ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.headerMenuBrand ul {
+    width: 300px;
+    background: #232f3d;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.4s all 0.2s;
+}
+
+.headerMenuBrand li:hover ul {
+    max-height: 300px;
+}
+
+.headerMenuBrandLink li{
+    width: 24%;
+}
+
+.headerMenuBrandLink li a {
+    color: white;
+}
+/* */
+
+.header {
+    width: 100%;
+    text-align: center;
+    background: #232f3d;
+    height: 150px;
+}
+
+.headerSubMenu {
+    display: none;
+}
+
+.headerBlockSocial {
+    display: none;
+}
+
+.headerSearchForm {
+    display: none;
+}
+
+.headerButtonSell {
+    display: none;
+}
+
+.headerIcon {
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.headerMenu {
+    float: left;
+    width: 7%;
+}
+
+.headerLogo {
+    width: 40%;
+    padding-top: 10px;
+}
+
+.headerLogoImg {
+    width: 100%;
+}
+
+.headerSearch {
+    float: right;
+    width: 7%;
+}
+
+.headerBrandName {
+    height: 30px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 10px 0 0 0;
+    font-family: "Open Sans";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.headerBrandName > li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+.headerBrandName > li a {
+    color: white;
+}
+
+.headerSellandAccount {
+    display: none;
+}
+
+@media (min-width: 641px) {
+    .header {
+        height: 220px;
+    }
+
+    .headerIcon {
+        padding-top: 70px;
+    }
+
+    .headerLogo {
+        width: 40%;
+        padding-top: 20px;
+    }
+
+    .headerBrandName {
+        margin: 30px 0 0 0;
+    }
+
+    .headerSearchBarInput {
+        width: 90%;
+    }
+
+    .headerSearchBarSubmit{
+        width: 10%;
+    }
+}
+
+@media (min-width: 960px) {
+    .header {
+        text-align: left;
+        height: 135px;
+        color: white;
+        font-family: "Open Sans";
+    }
+
+    .headerBlockSocial {
+        display: block;
+        height: 30px;
+    }
+
+    .headerSocial {
+        display: block;
+        float: left;
+        height: 80%;
+        margin: 5px 0 0 15px;
+        font-size: 0.6rem;
+    }
+
+    .headerSocialIcon {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .headerSocialIcon .footerSocial {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0;
+        vertical-align: baseline;
+    }
+
+    .headerSocialIcon .footerSocial .footerSocialImg {
+        padding: 0 6px 0 0;
+    }
+
+    .headerSearchForm {
+        width: 60%;
+        display: inline-block;
+        margin: 20px 0 0 45px;
+    }
+
+    .headerSearchBar {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .headerSearchBar input {
+        border: none;
+        outline: none;
+    }
+
+    .headerSearchBar {
+        height: 28px;
+    }
+
+    .headerSearchBarInput {
+        height: 100%;
+        width: 85%;
+        border-radius: 4px 0 0 4px;
+        padding: 0 20px 0 12px;
+        font-family: "Open Sans";
+    }
+
+    .headerSearchBarSubmit {
+        height: 100%;
+        cursor: pointer;
+        margin-left: -10px;
+        width: 6%;
+        border-radius: 0 4px 4px 0;
+        background: #ffc70c url(../img/headerSearch.png) no-repeat center center;
+        padding: 4px;
+        background-size: cover;
+        background-origin: content-box;
+    }
+
+    .headerSellandAccount {
+        width: 12%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+
+    .testone .headerSell {
+        margin-top: 20px;
+        float: right;
+        width: 80%;
+        padding: 6px 10px 6px 10px;
+        font-size: 0.7rem;
+    }
+
+    .headerButtonSell {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .headerAccount {
+        width: 100%;
+        float: right;
+        display: inline-block;
+        font-size: 0.8rem;
+        margin: 18px 0 0 0;
+    }
+
+    .headerMenu, .headerSearch, .headerBrandName {
+        display: none;
+    }
+
+    .headerLogo {
+        padding-top: 5px;
+        width: 22%;
+        height: 100%;
+        float: left;
+    }
+
+    .headerSubMenu {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .headerSubMenu li {
+        display: inline-block;
+        padding-right: 25px;
+        font-size: 0.8rem;
+    }
+
+    .SubMenuDownIcon {
+        vertical-align: middle;
+        padding: 0 0 3px 3px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        height: 160px;
+    }
+
+    .headerLogo {
+        width: 18%;
+    }
+
+    .headerSearchBar {
+        height: 30px;
+    }
+
+    .headerSearchBarSubmit {
+        padding: 8px;
+    }
+
+    .headerSellImg {
+        margin-right: 10px;
+    }
+
+    .headerAccount {
+        margin: 18px 0 0 0;
+    }
+
+}
+
+@media (min-width: 1441px) {
+    .header {
+        height: 150px;
+    }
+
+    .headerLogo {
+        width: 14%;
+    }
+
+    .testone .headerSell {
+        margin-top: 20px;
+        float: right;
+        width: 60%;
+        padding: 6px 10px 6px 10px;
+        font-size: 0.7rem;
+    }
+
+    .headerAccount {
+        width: 70%;
+    }
+
+    .headerSearchBar {
+        height: 35px;
+    }
+
+    .headerSearchBarSubmit {
+        padding: 14px;
+    }
+}

@@ -1,0 +1,294 @@
+main[role="main"] {
+    background: white;
+}
+
+.account {
+    width: 90%;
+    margin: 50px auto 80px auto;
+}
+
+.accountTitle {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9rem;
+    color: #ffc70c;
+    padding: 3px 0 3px 0;
+    background: #444e5a;
+    border-radius: 5px 5px 3px 3px;
+}
+
+.accountChoice {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.6rem;
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+.choiceConnInscr {
+    display: inline-block;
+    margin-right: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.choiceCurrent {
+    border-bottom: 3px solid black;
+}
+
+.choiceNotCurrent {
+    color: indianred;
+}
+
+.accountContent {
+    width: 100%;
+    height: 280px;
+    background: lightgray;
+    border-radius: 3px 3px 5px 5px;
+}
+
+.accountContentBlock {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.accountContentBlockMobile {
+    width: 65%;
+}
+
+.accountContentBlockMobile:first-child {
+    width: 30%;
+    float: left;
+    border-right: 1px solid black;
+}
+
+.fa-facebook:before, .fa-twitter:before, .fa-google-plus:before {
+    vertical-align: middle;
+    color: white;
+}
+
+.accountSocialImg {
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 25%;
+    border-radius: 4px;
+}
+
+.accountContentBlockSocial .fa-facebook {
+    background: #3b5998;
+    margin-top: 45px;
+}
+
+.accountContentBlockSocial .fa-twitter {
+    background: #00aced;
+}
+
+.accountContentBlockSocial .fa-google-plus {
+    background: #dc4a38;
+}
+
+.accountSocialText {
+    display: none;
+}
+
+.accountForm {
+    width: 90%;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.accountSignUp {
+    display: block;
+}
+
+.accountSignIn {
+    margin-top: 70px;
+    display: none;
+}
+
+.accountInputParameters {
+    color: black;
+    border-bottom: 1px solid #898989;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: "Open Sans";
+}
+
+.accountFormInputName {
+    display: inline-block;
+    width: 47%;
+}
+
+.accountFormInputInfo {
+    display: inline-block;
+    width: 96%;
+}
+
+.checkboxPrivacy {
+    margin-right: 5px;
+}
+
+.accountFormPrivacy {
+    font-size: 0.6rem;
+    margin: 5px 0 0 0;
+    text-align: left;
+}
+
+.accountFormSubmit {
+    font-family: "Open Sans";
+    outline: none;
+    border-radius: 6px;
+    padding: 8px;
+    border: none;
+    color: #ffc70c;
+    background: #444e5a;
+    cursor: pointer;
+}
+
+@media (min-width: 641px) {
+    .account {
+        margin-top: 70px;
+    }
+
+    .accountParameters {
+        line-height: 50px;
+    }
+
+    .accountTitle {
+        height: 50px;
+        line-height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .accountChoice {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 0.8rem;
+        text-align: right;
+        border-bottom: 1px solid black;
+    }
+
+    .accountContent {
+        height: 350px;
+    }
+
+    .accountSocialImg {
+        padding: 15px;
+        margin-bottom: 30px;
+        width: 15%;
+        cursor: pointer;
+    }
+
+    .accountContentBlockSocial .fa-facebook {
+        margin-top: 70px;
+    }
+
+    .accountSignIn .accountInputParameters {
+        margin-bottom: 20px;
+    }
+
+    .accountInputParameters {
+        font-size: 1rem;
+    }
+
+    .accountFormPrivacy {
+        font-size: 0.7rem;
+    }
+
+    .accountFormSubmit {
+        padding: 10px;
+        font-size: 0.9rem;
+        border: none;
+        color: #ffc70c;
+        background: #444e5a;
+        cursor: pointer;
+    }
+
+    .accountSignIn .accountFormInputInfo {
+        width: 55%;
+    }
+
+    .accountSignIn {
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .accountForm {
+        margin-top: 50px;
+    }
+
+    .accountContentBlockMobile:first-child {
+        width: 40%;
+        float: left;
+        border-right: 1px solid black;
+    }
+
+    .accountContentBlockMobile {
+        width: 50%;
+    }
+
+    .accountSocialImg {
+        padding: 14px;
+        width: 65%;
+        display: inline-block;
+    }
+
+    .accountContentBlockSocial .fa-facebook:before,
+    .accountContentBlockSocial .fa-twitter:before,
+    .accountContentBlockSocial .fa-google-plus:before {
+        font-size: 28px;
+    }
+
+    .accountContentBlockSocial .fa-twitter:before {
+        margin-left: -15px;
+    }
+
+    .accountSocialText {
+        display: inline-block;
+        font-size: 0.9rem;
+        color: white;
+        padding-left: 15px;
+        font-family: "Open Sans";
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .account {
+        width: 70%;
+    }
+
+    .accountForm {
+        width: 70%;
+        margin: 50px auto auto auto;
+    }
+
+    .accountSignIn {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .account {
+        width: 50%;
+    }
+
+    .accountContentBlockMobile {
+        width: 45%;
+    }
+
+    .accountContentBlockMobile:first-child {
+        width: 50%;
+        float: left;
+        border-right: 1px solid black;
+    }
+}

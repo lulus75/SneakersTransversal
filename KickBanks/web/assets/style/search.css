@@ -1,0 +1,301 @@
+.searchFilter {
+    width: 100%;
+    color: #394a58;
+}
+
+.searchFilterAction {
+    width: 100%;
+    float: left;
+    display: inline;
+}
+
+.searchFilterActionGlobal {
+    width: 100%;
+    height: 70px;
+}
+
+.searchFilterImg {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.searchFilterParameters {
+    display: inline-block;
+    width: 18%;
+    font-size: 0.6rem;
+    padding: 4px 0 4px 0
+}
+
+.searchFilterHover {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
+    width: 20px;
+    border: none;
+    border-bottom: 4px solid #ff545b;
+    margin: 5px auto 0 auto;
+}
+
+.searchFilterHoverBorder {
+    visibility: visible;
+    opacity: 1;
+    border-bottom: 4px solid #ff545b;
+}
+
+.searchFilterParameters:hover .searchFilterHover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.searchFilterSeparator {
+    margin: 5px 0 5px 0;
+}
+
+.searchFilterDone {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchFilterDoneImg {
+    width: 10%;
+}
+
+.searchFilterAdded {
+    vertical-align: top;
+    margin-top: 8px;
+    width: 20%;
+    display: inline-block;
+    font-size: 0.6rem;
+}
+
+.searchFilterAddedImg {
+    margin-left: 5px;
+    width: 22%;
+    vertical-align: middle;
+}
+
+.searchProductShoes {
+    display: inline-block;
+}
+
+.productShoes {
+    margin: 10px 4% 20px 4%;
+}
+
+/* menu */
+
+.searchFilterList, .searchFilterList ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.searchFilterList li {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #b4b4b4;
+    text-align: left;
+}
+
+.searchFilterList li:last-child {
+    border-bottom: none;
+}
+
+.searchFilterList ul li {
+    width: 75%;
+    display: inline-block;
+    border-radius: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 20px 0 20px 0;
+}
+
+.searchFilterList ul li:hover {
+    border-radius: 0;
+}
+
+.searchFilterList ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.searchFilterList ul {
+    display: none;
+    width: 100%;
+    margin-top: -60px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    transition: 0.4s all 0.2s;
+}
+
+.searchFilterBrand:hover + .searchFilterList ul {
+    max-height: 100% !important;
+}
+
+.searchFilterList li {
+    width: 20%;
+}
+
+.searchFilterList li a, .searchFilterList li {
+    color: #394a58;
+}
+
+.auctionInputNumber {
+    margin: 0 5px 0 5px;
+    width: 15%;
+    border: none;
+    border-radius: 4px;
+    background: #e6e6e6;
+}
+
+.searchFilterCancelApply {
+    margin: 20px 0 70px 0;
+    display: none;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.searchFilterButton {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    width: 35%;
+    z-index: 1000;
+    margin: 5px;
+    height: 30px;
+    color: white;
+    font-family: "Open Sans";
+}
+
+.searchFilterButtonCancel {
+    background: #394a58;
+}
+
+.searchFilterButtonApply {
+    background: #ffc70c;
+}
+
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 641px) {
+
+    .searchFilterButton {
+        width: 25%;
+    }
+
+    .searchFilterParameters {
+        font-size: 0.9rem;
+    }
+
+    .searchFilterAdded {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .searchFilterList ul {
+        margin-top: -90px;
+    }
+
+    .productShoes {
+        width: 30%;
+        margin: 40px 5% 0 5%;
+    }
+
+    .searchFilterActionGlobal {
+        width: 100%;
+        height: 130px;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .searchFilterSeparator {
+        margin: 50px 0 0px 0;
+    }
+
+    .searchFilterAddedImg {
+        margin-left: 5px;
+        width: 16%;
+        vertical-align: middle;
+    }
+
+    .searchFilterList ul {
+        margin-top: -110px;
+    }
+
+    .auctionProductShoes {
+        width: 100%;
+        margin: auto;
+    }
+
+    .productShoes {
+        width: 15%;
+        margin: 40px 3% 0 3%;
+    }
+
+    .searchFilterActionGlobal {
+        width: 100%;
+        height: 80px;
+    }
+
+    .searchFilterParameters {
+        display: inline-block;
+        width: 11%;
+        font-size: 0.6rem;
+        padding: 4px 0 4px 0;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .searchFilterList ul {
+        margin-top: -70px;
+    }
+
+    .searchFilterList ul li {
+        width: 51%;
+    }
+
+    .searchFilterSeparator {
+        margin: 20px 0 0px 0;
+    }
+
+    .searchFilterDone {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .productShoes {
+        width: 25%;
+        margin: 40px 3% 0 3%;
+    }
+
+    .productShoes:nth-of-type(4){
+        display: none;
+    }
+}
+
+@media (min-width: 1441px) {
+
+    .searchFilterButton {
+        width: 15%;
+        margin: 0 20px 0 20px;
+    }
+}

@@ -1,0 +1,27 @@
+{% block headIndex %}
+    <!doctype html>
+    <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kicks Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    {% block stylesheets %}
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:600,800,400' type='text/css'>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ asset('assets/style/default.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/style/content.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/style/header.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/style/menu.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/style/connex-inscrip.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/style/footer.css') }}">
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="{{ asset("assets/js/jquery-2.2.3.min.js") }}"></script>
+        <script src="{{ asset("assets/js/script.js") }}"></script>
+        <script src="{{ asset("assets/js/upload.js") }}"></script>
+        <script src="{{ asset("assets/js/enchere.js") }}"></script>
+    {% endblock %}
+    <title>KickBanks</title>
+</head>
+{% endblock %}

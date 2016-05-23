@@ -1,0 +1,92 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.accountInputDefault {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.testone {
+    padding: 0 30px 50px 30px;
+    height: 100%;
+}
+
+main[role="main"] {
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 600;
+    text-align: center;
+}
+
+.search .testone{
+    padding: 0 20px 50px 20px;
+}
+
+@media (min-width: 641px) {
+    .testone, .search .testone {
+        padding: 0 80px 50px 80px;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .index {
+        padding: 0 180px 0 180px;
+    }
+
+    .testone {
+        padding: 0 100px 50px 100px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .testone, .search .testone {
+        padding: 0 150px 50px 150px;
+    }
+
+    .searchContent .testone{
+        padding: 0 80px 50px 80px;
+    }
+
+    .testone {
+        display: inline-block;
+        padding: 0 150px 50px 150px;
+    }
+
+    main[role="main"] .testone {
+        margin: 0 200px 0 200px;
+        background: #FFF;
+        padding-bottom: 50px;
+    }
+
+    .index {
+        padding: 0 0 0 0;
+    }
+
+    .container {
+        background: #f9f9f9;
+    }
+}
+
+@media (min-width: 1441px) {
+    .testone {
+        padding: 0 300px 0 300px;
+    }
+
+    main[role="main"] .testone {
+        margin: 0 400px 0 400px;
+        padding: 0 100px 50px 100px;
+    }
+
+    .testone, .search .testone {
+        padding: 0 300px 50px 300px;
+    }
+
+    .searchContent .testone{
+        padding: 0 80px 50px 80px;
+    }
+}

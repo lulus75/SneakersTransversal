@@ -1,0 +1,21 @@
+EntitiesBundle\Entity\Message:
+    type: entity
+    table: null
+    repositoryClass: EntitiesBundle\Repository\MessageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        idUser:
+            type: integer
+        idRecepteur:
+            type: integer
+        contentMessage:
+            type: string
+            length: 255
+        dateMessage:
+            type: date
+    lifecycleCallbacks: {  }

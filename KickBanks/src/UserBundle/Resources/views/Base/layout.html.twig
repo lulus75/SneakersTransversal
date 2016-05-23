@@ -1,0 +1,14 @@
+{% block layout %}
+    {% if app.request.session.get("userId") is null %}
+        <a href="/login">Login</a>
+        <a href="/">Acceuil</a>
+        <a href="/register">S'inscrire</a>
+    {% else %}
+        <a href="/">Acceuil</a>
+        <a href="/profile">Profile</a>
+        <a href="/article">Article</a>
+        <a href="/tchat">Tchat</a>
+        <a href="/messagerie">Messagerie</a>
+        <a href="/logout">LogOut</a>
+    {% endif %}
+{% endblock %}

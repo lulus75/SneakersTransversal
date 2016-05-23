@@ -1,0 +1,18 @@
+EntitiesBundle\Entity\Marque:
+    type: entity
+    table: null
+    repositoryClass: EntitiesBundle\Repository\MarqueRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        marque:
+            type: string
+            length: 255
+        logoUrl:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

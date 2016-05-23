@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+{% include 'UserBundle:Base:layout.html.twig' %}
+<body>
+<h4>Votre profile</h4>
+<ul>
+    <li>
+        Pseudo :
+        {{ nickname }}
+    </li>
+    <li>
+        Email :
+        {{ email }}
+    </li>
+    <li>
+        Prénom:
+        {{ firstname }}
+    </li>
+    <li>
+        Nom :
+        {{ lastname }}
+    </li>
+</ul>
+<br><br>
+<p>
+    Enchères en cours :
+    {{ msgHistorique }}
+    {% for value in historiquePrice %}
+    {{ value }}
+
+    {% endfor %}
+<br><br>
+    Enchères remportées :
+
+
+</p>
+
+
+<br><br>
+<p>
+    Mes articles : {{ msgArticle }}
+    <br>
+    <br>
+    {{ dump(allArticles) }}
+</p>
+<a href="/profile/editProfile">Editer votre profile ici !</a>
+</body>
+</html>

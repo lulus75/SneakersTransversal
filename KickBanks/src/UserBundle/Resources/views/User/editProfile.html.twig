@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Edition de profile</title>
+</head>
+{% include 'UserBundle:Base:layout.html.twig' %}
+<body>
+<h2>Changer vos identifiants</h2>
+<form name="formEditProfile" method="POST">
+    <label for="editNickname">New nickname</label><br>
+    <input type="text" name="editNickname" id="editNickname"><br><br>
+    <label for="editEmail">New Email</label><br>
+    <input type="email" name="editEmail" id="editEmail"><br><br>
+    <br>
+    <br>
+    <input type="submit" value="Changer !">
+</form>
+</body>
+</html>

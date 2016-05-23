@@ -1,0 +1,154 @@
+{% include 'UserBundle:Base:headRegisterLogin.html.twig' %}
+
+<body>
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+    <ul class="c-menu__items">
+        <li class="c-menu__item">
+            <a href="#" class="c-menu__link">
+                <div class="headerSell">
+                    <img src="{{ asset('assets/img/headerSell.png   ') }}" class="headerSellImg" alt="shoes"><a href="/article">VENDRE</a>
+                </div>
+            </a>
+        </li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">MON COMPTE</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">
+                <hr>
+            </a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">COMMUNAUTÉ</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">NEWS</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">PRÉSENTATION</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">COMMENT ÇA MARCHE?</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">FAQ</a></li>
+    </ul>
+</nav>
+
+<header class="header">
+    <div class="testone">
+        <div class="headerBlockSocial">
+            <div class="headerSocial">SUIVEZ NOUS SUR:
+                <div class="headerSocialIcon">
+                    <div class="footerSocial"><i class="fa fa-twitter fa-lg footerSocialImg" aria-hidden="true"></i>
+                    </div>
+                    <div class="footerSocial"><i class="fa fa-facebook fa-lg footerSocialImg" aria-hidden="true"></i>
+                    </div>
+                    <div class="footerSocial"><i class="fa fa-instagram fa-lg footerSocialImg" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="headerSearchForm">
+            <div class="headerSearchBar">
+                <input type="search" placeholder="Rechercher" class="headerSearchBarInput">
+                <input type="submit" value="" class="headerSearchBarSubmit">
+            </div>
+            <ul class="headerSubMenu">
+                <li class="headerSearchSubMenu">
+                    <ul class="headerMenuBrand">
+                        <li>
+                            SNEAKERS
+                            <img src="{{ asset('assets/img/downIcon.png') }}" class="SubMenuDownIcon" alt="arrow">
+                            <ul class="headerMenuBrandLink">
+                                <li><a href="/airforce">Air Force</a></li>
+                                <li><a href="/adidas">Adidas</a></li>
+                                <li><a href="/asiscs">Asics</a></li>
+                                <li><a href="/converse">Converse</a></li>
+                                <li><a href="/diadora">Diadora</a></li>
+                                <li><a href="/jordan">Jordan</a></li>
+                                <li><a href="/karhu">Karhu</a></li>
+                                <li><a href="/lacoste">Lacoste</a></li>
+                                <li><a href="/lecoqsportif">Le coq sportif</a></li>
+                                <li><a href="/newbalance">New Balance</a></li>
+                                <li><a href="/nike">Nike</a></li>
+                                <li><a href="/nikesb">Nike SB</a></li>
+                                <li><a href="/puma">Puma</a></li>
+                                <li><a href="/reebook">Reebook</a></li>
+                                <li><a href="/vans">Vans</a></li>
+                                <li><a href="/veja">Veja</a></li>
+                                <li><a href="/yeezy">Yeezy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="headerSearchSubMenu">COMMUNAUTÉ</li>
+                <li class="headerSearchSubMenu">NEWS</li>
+                <li class="headerSearchSubMenu">
+                    QUI SOMMES NOUS?
+                    <img src="{{ asset('assets/img/downIcon.png') }}" class="SubMenuDownIcon" alt="arrow">
+                </li>
+            </ul>
+        </form>
+        <div class="headerSellandAccount">
+            <div class="headerSell headerButtonSell">
+                <img src="{{ asset('assets/img/headerSell.png') }}" class="headerSellImg" alt="chaussure">VENDRE
+            </div>
+            <div class="headerAccount">VOTRE COMPTE</div>
+        </div>
+        <img src="{{ asset('assets/img/headerMenu.png') }}" class="onClick headerIcon headerMenu" alt="menu">
+        <div class="headerIcon headerLogo">
+            <img src="{{ asset('assets/img/logo_KicksBank.png') }}" class="headerLogoImg" alt="logo">
+        </div>
+        <img src="{{ asset('assets/img/headerSearch.png') }}" class="headerIcon headerSearch headerSearchClick" alt="search">
+        <ul class="headerBrand">
+            <div class="headerBrandName">
+                <li><a href="/airforce">Air Force</a></li>
+                <li><a href="/adidas">Adidas</a></li>
+                <li><a href="/asics">Asics</a></li>
+                <li><a href="/converse">Converse</a></li>
+                <li><a href="/diadora">Diadora</a></li>
+                <li><a href="/jordan">Jordan</a></li>
+                <li><a href="/karhu">Karhu</a></li>
+                <li><a href="/lacoste">Lacoste</a></li>
+                <li><a href="/lecoqsportif">Le coq sportif</a></li>
+                <li><a href="/newbalance">New Balance</a></li>
+                <li><a href="/nike">Nike</a></li>
+                <li><a href="/nikesb">Nike SB</a></li>
+                <li><a href="/puma">Puma</a></li>
+                <li><a href="/reebook">Reebook</a></li>
+                <li><a href="/vans">Vans</a></li>
+                <li><a href="/veja">Veja</a></li>
+                <li><a href="/yeezy">Yeezy</a></li>
+            </div>
+        </ul>
+    </div>
+</header>
+{% include 'UserBundle:Base:layout.html.twig' %}
+
+
+<main role="main">
+    <div class="account">
+        <div class="accountTitle">CONNECTEZ-VOUS</div>
+        <div class="accountChoice">
+            <div class="choiceConnInscr choiceNotCurrent choiceConn">CONNEXION</div>
+        </div>
+        <div class="accountContent">
+            <div class="accountContentBlock accountContentBlockMobile">
+                <div class="accountContentBlockSocial">
+                    <i class="fa fa-facebook fa-lg accountSocialImg" aria-hidden="true">
+                        <div class="accountSocialText">Connecte toi avec Facebook</div>
+                    </i>
+                </div>
+                <div class="accountContentBlockSocial">
+                    <i class="fa fa-twitter fa-lg accountSocialImg" aria-hidden="true">
+                        <div class="accountSocialText">Connecte toi avec Twitter</div>
+                    </i>
+                </div>
+                <div class="accountContentBlockSocial">
+                    <i class="fa fa-google-plus fa-lg accountSocialImg" aria-hidden="true">
+                        <div class="accountSocialText">Connecte toi avec Google+</div>
+                    </i>
+                </div>
+            </div><div class="accountContentBlock accountContentBlockMobile">
+                <form class="accountForm " method="POST">
+                    <input type="email" placeholder="Email" name="email" class="accountFormInputInfo accountInputDefault accountInputParameters">
+                    <input type="password" placeholder="Mot de passe" name="password" class="accountFormInputInfo accountInputDefault accountInputParameters">
+                    <br>
+                    <input type="submit" value="Se connecter" class="accountFormSubmit accountSubmitParameters">
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<a href="/register">Pas encore inscrit ?</a>
+</body>
+{% include 'UserBundle:Base:footer.html.twig' %}
+</html>

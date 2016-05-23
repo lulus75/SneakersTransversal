@@ -1,0 +1,24 @@
+EntitiesBundle\Entity\Commentaire:
+    type: entity
+    table: null
+    repositoryClass: EntitiesBundle\Repository\CommentaireRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        idUser:
+            type: integer
+        idArticle:
+            type: integer
+        content:
+            type: string
+            length: 255
+        dateCommentaire:
+            type: date
+        nickname:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

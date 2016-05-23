@@ -1,0 +1,54 @@
+EntitiesBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: EntitiesBundle\Repository\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        idUser:
+            type: integer
+        idArticle:
+            type: integer
+        description:
+            type: string
+            length: 255
+        dateArticle:
+            type: datetime
+        nickname:
+            type: string
+            length: 255
+        bidPrice:
+            type: integer
+        price:
+            type: integer
+        marque:
+            type: string
+            length: 255
+        etat:
+            type: string
+            length: 255
+        couleur:
+            type: string
+            length: 255
+        articleUrl1:
+            type: string
+            length : 255
+        articleUrl2:
+            type: string
+            length : 255
+        articleUrl3:
+            type: string
+            length : 255
+        endTime:
+            type: datetime
+        winnerId:
+            type: integer
+            nullable: TRUE
+        title:
+            type: string
+            length : 255
+    lifecycleCallbacks: {  }

@@ -1,0 +1,46 @@
+user_register:
+    path:     /register
+    defaults: { _controller: UserBundle:Register:register }
+
+user_homepage:
+    path:    /
+    defaults: {_controller: UserBundle:Index:index }
+
+user_profile:
+    path:   /profile
+    defaults: {_controller: UserBundle:Profile:profile }
+
+user_article:
+    path:  /article
+    defaults: {_controller: UserBundle:Article:article }
+
+user_login:
+    path: /login
+    defaults: {_controller: UserBundle:Login:login }
+
+user_logout:
+    path: /logout
+    defaults: {_controller: UserBundle:Logout:logout }
+
+
+article_search:
+    path:  /search
+    defaults: {_controller: UserBundle:Search:Search }
+enchere_article:
+    path: /enchere/{id}
+    defaults: {_controller: UserBundle:Enchere:enchere }
+home_tchat:
+    path: /chat
+    defaults: {_controller: UserBundle:Tchat:tchat }
+home_message:
+    path: /messagerie
+    defaults: {_controller: UserBundle:Message:message }
+user_editProfile:
+    path:  /profile/editProfile
+    defaults: {_controller: UserBundle:EditProfile:editProfile }
+other_profile:
+    path:  /profile/other/{nickname}
+    defaults: {_controller: UserBundle:OtherProfile:otherProfile }
+marque:
+    path:  /{marqueName}
+    defaults: {_controller: UserBundle:Marque:marque }

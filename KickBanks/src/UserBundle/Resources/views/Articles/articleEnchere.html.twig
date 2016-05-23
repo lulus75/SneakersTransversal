@@ -1,0 +1,231 @@
+{% include 'UserBundle:Base:headIndex.html.twig' %}
+<body>
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+    <ul class="c-menu__items">
+        <li class="c-menu__item">
+            <a href="#" class="c-menu__link">
+                <div class="headerSell">
+                    <img src="{{ asset('asset/img/headerSell.png') }}" class="headerSellImg" alt="shoes">VENDRE
+                </div>
+            </a>
+        </li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">MON COMPTE</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">
+                <hr>
+            </a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">COMMUNAUTÉ</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">NEWS</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">PRÉSENTATION</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">COMMENT ÇA MARCHE?</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">FAQ</a></li>
+    </ul>
+</nav>
+
+<header class="header">
+    <div class="testone">
+        <div class="headerBlockSocial">
+            <div class="headerSocial">SUIVEZ NOUS SUR:
+                <div class="headerSocialIcon">
+                    <div class="footerSocial"><i class="fa fa-twitter fa-lg footerSocialImg" aria-hidden="true"></i>
+                    </div>
+                    <div class="footerSocial"><i class="fa fa-facebook fa-lg footerSocialImg" aria-hidden="true"></i>
+                    </div>
+                    <div class="footerSocial"><i class="fa fa-instagram fa-lg footerSocialImg" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="headerSearchForm">
+            <div class="headerSearchBar">
+                <input type="search" placeholder="Rechercher" class="headerSearchBarInput">
+                <input type="submit" value="" class="headerSearchBarSubmit">
+            </div>
+            <ul class="headerSubMenu">
+                <li class="headerSearchSubMenu">
+                    <ul class="headerMenuBrand">
+                        <li>
+                            SNEAKERS
+                            <img src="{{ asset('assets/img/downIcon.png') }}" class="SubMenuDownIcon" alt="arrow">
+                            <ul class="headerMenuBrandLink">
+                                <li><a href="/airforce">Air Force</a></li>
+                                <li><a href="/adidas">Adidas</a></li>
+                                <li><a href="/asics">Asics</a></li>
+                                <li><a href="/converse">Converse</a></li>
+                                <li><a href="/diadora">Diadora</a></li>
+                                <li><a href="/jordan">Jordan</a></li>
+                                <li><a href="/karhu">Karhu</a></li>
+                                <li><a href="/lacoste">Lacoste</a></li>
+                                <li><a href="/lecoqsportif">Le coq sportif</a></li>
+                                <li><a href="/newbalance">New Balance</a></li>
+                                <li><a href="/nike">Nike</a></li>
+                                <li><a href="/nikesb">Nike SB</a></li>
+                                <li><a href="/puma">Puma</a></li>
+                                <li><a href="/reebook">Reebook</a></li>
+                                <li><a href="/vans">Vans</a></li>
+                                <li><a href="/veja">Veja</a></li>
+                                <li><a href="/yeezy">Yeezy</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="headerSearchSubMenu">COMMUNAUTÉ</li>
+                <li class="headerSearchSubMenu">NEWS</li>
+                <li class="headerSearchSubMenu">
+                    QUI SOMMES NOUS?
+                    <img src="{{ asset('assets/img/downIcon.png') }}" class="SubMenuDownIcon" alt="arrow">
+                </li>
+            </ul>
+        </form>
+        <div class="headerSellandAccount">
+            <div class="headerSell headerButtonSell">
+                <img src="{{ asset('assets/img/headerSell.png') }}" class="headerSellImg" alt="chaussure">VENDRE
+            </div>
+            <div class="headerAccount">VOTRE COMPTE</div>
+        </div>
+        <img src="{{ asset('assets/img/headerMenu.png') }}" class="onClick headerIcon headerMenu" alt="menu">
+        <div class="headerIcon headerLogo">
+            <img src="{{ asset('assets/img/logo_KicksBank.png') }}" class="headerLogoImg" alt="logo">
+        </div>
+        <img src="{{ asset('assets/img/headerSearch.png') }}" class="headerIcon headerSearch headerSearchClick" alt="search">
+        <ul class="headerBrand">
+            <div class="headerBrandName">
+                <li><a href="/airforce">Air Force</a></li>
+                <li><a href="/adidas">Adidas</a></li>
+                <li><a href="/asics">Asics</a></li>
+                <li><a href="/converse">Converse</a></li>
+                <li><a href="/diadora">Diadora</a></li>
+                <li><a href="/jordan">Jordan</a></li>
+                <li><a href="/karhu">Karhu</a></li>
+                <li><a href="/lacoste">Lacoste</a></li>
+                <li><a href="/lecoqsportif">Le coq sportif</a></li>
+                <li><a href="/newbalance">New Balance</a></li>
+                <li><a href="/nike">Nike</a></li>
+                <li><a href="/nikesb">Nike SB</a></li>
+                <li><a href="/puma">Puma</a></li>
+                <li><a href="/reebook">Reebook</a></li>
+                <li><a href="/vans">Vans</a></li>
+                <li><a href="/veja">Veja</a></li>
+                <li><a href="/yeezy">Yeezy</a></li>
+
+            </div>
+        </ul>
+    </div>
+</header>
+<main role="main" class="container product">
+    <div class="testone test">
+        <div class="auctionTitle">
+           <!-- <div class="auctionTitleBrand">
+                <img src="{{ asset('assets/img/logoJordan.png') }}" class="auctionTitleBrandImg">
+            </div> -->
+            <div class="auctionTitleTitle"> {{ title }}</div>
+            <div class="auctionTitleBrandName">{{ marque }}</div>
+        </div>
+        <div class="auctionCarroussel">
+            <img alt="article" src="{{ asset(url[0]) }}" style="height: 100%; width: 100%">
+        </div>
+        <div class="auctionInfo">
+            <div class="auctionInfoUser auctionInfoUserName"><img src="{{ asset('assets/img/product/icons-08.png') }}" class="auctionInfoImg auctionInfoImgSeller">VENDEUR : {{ nickname }}</div>
+            <div class="auctionInfoUser auctionInfoUserReview"><img src="{{ asset('assets/img/product/icons-12.png') }}" class="auctionInfoImg auctionInfoImgTrust">CONFIANCE : 100% positif</div>
+            <div class="auctionInfoUser"><img src="{{ asset('assets/img/product/icons-03.png') }}" class="auctionInfoImg auctionInfoImgCondition">ÉTAT : {{ etat }}</div>
+            <div class="auctionInfoUser"><img src="{{ asset('assets/img/product/icons-05.png') }}" class="auctionInfoImg auctionInfoImgColor">COULEUR : {{ couleur }}</div>
+            <div class="auctionInfoUser"><img src="{{ asset('assets/img/product/icons-07.png') }}" class="auctionInfoImg auctionInfoImgOut">SORTIE : 2015</div>
+            <div class="auctionInfoUser auctionInfoUserPrice">PRIX ORIGINAL : 99,50 EUR</div>
+            <div class="auctionInfoUser auctionInfoUserDescription">{{ description }}</div>
+        </div>
+        <div class="auctionAuction">
+            <div class="auctionAuctionPrice">
+                <form class="formAuctionNow">
+                    <div class="auctionAuctionPriceNow">
+                        <img src="{{ asset('assets/img/product/icons-19.png') }}" class="auctionAuctionPriceImg">{{ price }}
+                    </div>
+                    <input type="submit" value="ACHAT IMMÉDIAT" class="accountInputDefault auctionInput auctionInputNow">
+                </form>
+            </div>
+            <div class="auctionAuctionChoice">OU</div>
+            <div class="auctionAuctionPrice">
+                <form method="POST" name="articleEnchere" class="formAuctionBid">
+                    <div class="auctionAuctionPriceBid">
+                        <img src="{{ asset('assets/img/product/icons-18.png') }}" class="auctionAuctionPriceImg">
+                        <input type="number" name="newPrice" class="auctionInputNumber" placeholder="{{ bidPrice }}"> EUR
+                    </div>
+                    <input type="submit" value="Enchérir" class="accountInputDefault auctionInput auctionInputBid">
+                </form>
+            </div>
+        </div>
+        <div class="auctionInterested">
+            <hr class="auctionInterestedHr"><div class="auctionInterestedTitle">CES ANNONCES POURRAIENT VOUS INTÉRESSER</div>
+        </div>
+        <div class="auctionProductShoes">
+            <div class="productShoes">
+                <div class="productShoesBlockImg"><img src="{{ asset('assets/img/testShoes1.png') }}" class="productShoesImg" alt="shoes"></div>
+                <div class="productShoesTitle">ADIDAS NMD CORE BLACK LUSH RED</div>
+                <div class="productShoesBuy"><img src="{{ asset('assets/img/productBuy.png') }}" class="productShoesBuyImg" alt="buy">€900</div>
+                <div class="productShoesBid"><img src="{{ asset('assets/img/productBid.png') }}" class="productShoesBidImg" alt="bid">€730</div>
+                <div class="productShoesAdded">Vendu par Nolane.B</div>
+            </div>
+            <div class="productShoes">
+                <div class="productShoesBlockImg"><img src="{{ asset('assets/img/testShoes1.png') }}" class="productShoesImg" alt="shoes"></div>
+                <div class="productShoesTitle">ADIDAS NMD CORE BLACK LUSH RED</div>
+                <div class="productShoesBuy"><img src="{{ asset('assets/img/productBuy.png') }}" class="productShoesBuyImg" alt="buy">€900</div>
+                <div class="productShoesBid"><img src="{{ asset('assets/img/productBid.png') }}" class="productShoesBidImg" alt="bid">€730</div>
+                <div class="productShoesAdded">Vendu par Nolane.B</div>
+            </div>
+            <div class="productShoes">
+                <div class="productShoesBlockImg"><img src="{{ asset('assets/img/testShoes1.png') }}" class="productShoesImg" alt="shoes"></div>
+                <div class="productShoesTitle">ADIDAS NMD CORE BLACK LUSH RED</div>
+                <div class="productShoesBuy"><img src="{{ asset('assets/img/productBuy.png') }}" class="productShoesBuyImg" alt="buy">€900</div>
+                <div class="productShoesBid"><img src="{{ asset('assets/img/productBid.png') }}" class="productShoesBidImg" alt="bid">€730</div>
+                <div class="productShoesAdded">Vendu par Nolane.B</div>
+            </div>
+            <div class="productShoes">
+                <div class="productShoesBlockImg"><img src="{{ asset('assets/img/testShoes1.png') }}" class="productShoesImg" alt="shoes"></div>
+                <div class="productShoesTitle">ADIDAS NMD CORE BLACK LUSH RED</div>
+                <div class="productShoesBuy"><img src="{{ asset('assets/img/productBuy.png') }}" class="productShoesBuyImg" alt="buy">€900</div>
+                <div class="productShoesBid"><img src="{{ asset('assets/img/productBid.png') }}" class="productShoesBidImg" alt="bid">€730</div>
+                <div class="productShoesAdded">Vendu par Nolane.B</div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% include 'UserBundle:Base:layout.html.twig' %}
+
+<!-- Historique des enchères :
+{#{% for value in historique %}
+    {{ value.newPrice }}
+{% endfor %}#} -->
+{#<h2>Réagir </h2>
+<form name="formComment" method="POST">
+    <textarea name="commentaire" placeholder="Votre commentaire ..."></textarea><br>
+    <br>
+    <input type="submit" value="Publier">
+</form>
+<br>
+<strong>Commentaire(s)</strong>
+<p>
+    {{ msgCommentaires }}
+    <br>
+    <br>
+    {% for value in commentaires %}
+<ul>
+    <li>
+        {{ value.nickname }}
+    </li>
+    <br>
+    <li>
+        {{ value.content }}
+    </li>
+    <br>
+    <li>
+        {{ value.dateCommentaire.date|date("d/m/Y") }}
+    </li>
+    <br>
+    <br>
+</ul>
+{% endfor %}
+</p>#}
+{% include 'UserBundle:Base:footer.html.twig' %}
+</body>
+</html>
